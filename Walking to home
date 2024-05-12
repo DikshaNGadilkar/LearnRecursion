@@ -1,0 +1,25 @@
+scenario: you want to go home ,home is 10km away from you.
+import java.util.*;
+import java.io.*;
+public class Main
+{
+    static void walkToHome(int src,int dest){
+        System.out.println("dest " +dest+"src "+src);
+        if(src==dest){
+            System.out.println("reached");
+            return;
+        }
+        //processing
+        src++;
+        //recursive
+        walkToHome(src,dest);
+    }
+    
+	public static void main(String[] args) {
+    int dest=10;
+    int src=1;
+walkToHome(src,dest);
+//System.out.println(fact);
+        
+	}
+}
